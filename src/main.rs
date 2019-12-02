@@ -9,6 +9,7 @@ mod utils {
 
 mod days {
   pub mod day1;
+  pub mod day2;
 }
 
 fn main() {
@@ -17,6 +18,7 @@ fn main() {
 
   match args[1].parse::<i32>().unwrap() {
     1 => days::day1::run(),
+    2 => days::day2::run(),
     _ => panic!("Expected day as first argument")
   };
 }
